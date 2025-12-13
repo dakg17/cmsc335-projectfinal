@@ -4,7 +4,6 @@ import Search from "../models/search.js";
 
 const router = express.Router();
 
-// homepage
 router.get("/", (req, res) => {
   res.render("index");
 });
@@ -20,7 +19,6 @@ router.get("/stats", (req, res) => {
 router.post("/stats", async (req, res) => {
   const { userName, age, player } = req.body;
 
-  // save to DB
   const search = new Search({ userName, age, artist: player });
   await search.save();
 
