@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Results for <%= artist.profile.name %></h1>
+
+  <img src="<%= artist.visuals.avatarImage.sources[0].url %>" width="200">
+
+  <p>Followers: <%= artist.stats.followers.toLocaleString() %></p>
+  <p>Monthly Listeners: <%= artist.stats.monthlyListeners.toLocaleString() %></p>
+
+  <a href="/">New Search</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap" rel="stylesheet">
+
+    <title>Search</title>
+</head>
+<body>
+    <div>
+        <h1 id>Spotify Artist Search</h1>
+        <form action="/stats" method="post">
+            <fieldset>
+                <legend><strong>User Information</strong></legend>
+                <label>
+                    Your Name: <input type="text" id="userName" class="name" name="userName">
+                </label>
+                <label class="secondfield">
+                    Age: <input type="number" id="age" name="age">
+                </label>
+            </fieldset>
+        
+            <fieldset id="artist">
+                <legend><strong>Artist Information</strong></legend>
+                <label>
+                    Artist Name: <input type="text" id="player" class="name" name="player" required>
+                </label>
+            </fieldset>
+        
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <form action="/history" method="get">
+            <button type="submit" id="requests">View Past Requests</button>
+        </form>
+        
+        
+    </div>
+    
+</body>
+</html>

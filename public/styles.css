@@ -1,0 +1,64 @@
+body {
+    font-family: 'BBH Hegarty', sans-serif;
+    background-image: url(screen.avif);
+    background-size: 950px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #efeeec;
+}
+
+div {
+    background-image: url(Spotify-Icon-Logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: -160px 80px;
+    height: 500px;
+    color: black;
+    margin-left: 523px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+
+fieldset {
+    margin-left: 60px;
+    margin-top: 60px;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: black;
+    width: 330px;
+}
+
+button {
+    margin-top: 50px;
+    margin-left: 125px;
+    background-color: transparent;
+}
+
+#requests {
+    margin-left: 175px;
+}
+
+.name {
+    width: 120px;
+}
+
+#artist {
+    margin-top: 360px;
+}
+
+input {
+    border-radius: 8px;
+}
+
+#secondfield {
+    margin-left: 20px;
+}
+
+#age {
+    width: 40px;
+}

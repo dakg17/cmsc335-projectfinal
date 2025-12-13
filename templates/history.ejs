@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Past Requests</title>
+</head>
+<body>
+  <h1>Past Searches</h1>
+
+  <ul>
+    <% searches.forEach(s => { %>
+      <li>
+        <strong><%= s.userName %></strong> (age <%= s.age %>) searched for
+        "<%= s.artist %>"
+      </li>
+    <% }) %>
+  </ul>
+
+  <hr>
+  <form action="/processAdminRemove" method="POST">
+    <button type="submit">Clear Database</button>
+  </form>
+
+
+  <a href="/">Back</a>
+</body>
+</html>
