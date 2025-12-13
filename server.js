@@ -21,7 +21,6 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
-// routes
 app.use("/", statsRouter);
 
 mongoose.connect(process.env.MONGO_URI)
